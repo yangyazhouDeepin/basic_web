@@ -29,6 +29,12 @@ module.exports = {
           {loader: 'style-loader'},
           {loader: 'css-loader'}
         ]
+      },
+      {
+        test: /\.(jpg|png)$/,
+        use: [
+          {loader: 'url-loader?limit=8192'}
+        ]
       }
     ]
   }
