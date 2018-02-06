@@ -1,0 +1,8 @@
+/* 解决推广站配置select框显示问题 */
+.myself-select{max-height: 120px;overflow-y: auto;width: 100%;z-index: 5;position: absolute;transition: .2s; margin-top: 25px; display:none; opacity: 0;background-color: #fff; border: 1px solid #d2d2d2; box-shadow: 0 2px 4px rgba(0,0,0,.12); border-radius: 2px; padding: 5px 0; }
+.myself-select.active{display: block; opacity: 1; margin-top: 5px;}
+.myself-select-item{padding: 0 10px; line-height: 36px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;cursor: pointer;}
+.myself-select-item:hover{background-color: #f2f2f2;}
+.myself-down{position: relative;}
+.myself-down:after{content: ''; position:absolute; top: 50%; right: 4px; border: 5px solid transparent; border-top: 5px solid #333;}
+/* end */
